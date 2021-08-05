@@ -1,6 +1,10 @@
 # CSV Files
 *.csv
 
+# Too Large Tableau Files
+c_Data_Exploration/Investigate_expansion_to_larger_files/citibike_larger_data_set.twbx
+e_Data_Analysis/citibikeAnalysis_12-2017to09-2018.twbx
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
@@ -130,4 +134,4 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
-c_Data_Exploration/Investigate_expansion_to_larger_files/citibike_larger_data_set.twbx
+
