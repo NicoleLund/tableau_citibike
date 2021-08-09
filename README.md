@@ -29,12 +29,12 @@ Tableau Public
 
 <mark>Add discussion</mark>
 
-## Citibike Station Locations
+### Citibike Station Locations
 In order to provide the user with the best service, Citibike is interested in maintaining an adequate supply of bikes at the most popular stations.  The Station Popularity dashboard identifies the most popular stations to start and end a ride based on the number of rides associated with that location. Each map on the dashboard can be filtered to show between 1 and all months of data.  Note, that the December data is from 2017 to ensure a continuous dataset.  Zip code data is also provided as a reference to orient the user on the map.  There are minor shifts in popular stations from month to month.
 
 ![station popularity](images/station_popularity.png)
 
-## Citibike Ridership Demographics
+### Citibike Ridership Demographics
 The most basic user data that indicates the health of Citibike as a company is the number of rides taken by riders.  The Ridership Demographics dashboard shows a time-series analysis of the number of rides taken for each Gender and for each User Type.  Total ridership more than doubled from the winter to the summer months. The growth could be explained by seasonality of pleasant riding conditions. To further understand growth trend, multiple years of data would need to be assessed outside of Tableau Public due to file size constraints by the platform.
 
 The data presented shows a few interesting items of note:
@@ -45,18 +45,18 @@ The data presented shows a few interesting items of note:
 
 ![ridership demographics](images/ridership_demographics.png)
 
-## Citibike Ridership by Age
+### Citibike Ridership by Age
 
 A couple of anomalies were discovered when reviewing the number of rides taken by users of different age groups.  It appears as though the user's age is self-reported rather than through an external verification check.  There are age entries up to 133 years old.  Any entries greater than 80-90 years old are circumspect. The largest anomaly is a spike in ride count in the 49 year old and unknown gender group. That spike is double the maximum for any other age.  This phenomenon is investigated in further detail later.   
 
 ![ridership by age](images/ridership_by_age.png)
 
-## Ridership Anomaly
+### Ridership Anomaly
 The age data revealed an anomaly in the number of rides taken by 49 year old people that did not identify a gender. This spike in ride counts indicates that the new user interface is designed with default entries for birth year (1969) and Gender (unknown).  It is reasonable to believe that riders may not wish to take the time to fill in every entry in the new user form or did not want to reveal sensitive personal information and allowed default values to be set in their accounts. Further analysis indicates that the lion share of rides with this demographic combination fell under the "Customer" user type and a smaller but still significant number of "Subscriber" user type rides.
 
 ![ridership anomaly](images/ridership_anomaly.png)
 
-## Citibike Average Rental Duration Anomaly
+### Citibike Average Rental Duration Anomaly
 
 In addition to understanding which stations are most popular within the city, it is also important for Citibike to understand the usage trends of their bicycles on a daily basis. The Rental Hours dashboard investigates the hours in which rides are initiated and the average duration of those rides.  Regardless of season, the peak times for riders to start a ride align with typical rush hour times as would be expected. 
 
@@ -64,7 +64,7 @@ A surprising anomaly was discovered when looking at the average ride duration ov
 
 ![ride duration](images/ride_durations.png)
 
-## Miscellaneous Analysis
+### Miscellaneous Analysis
 
 The following analysis was performed, but not included in the final assessment:
 * Age vs Ride Duration: The Age vs Ride Duration chart on "Index-Miscellaneous 1" dashboard shows a relatively short median ride time and another view of the excessively long duration rentals discussed previously. 
@@ -75,13 +75,16 @@ The following analysis was performed, but not included in the final assessment:
 
 * Top and Bottom 10 Stations: The top and bottom stations to start or end a trip were also reviewed, but did not improve upon the station popularity dashboard shown previously. This dashboard is included in "Index-Miscellaneous 2" for interested individuals.
 
-## Analysis challenges
+### Analysis challenges
 
 <mark>Add discussion</mark>
 
 -----
 
 ## Project Details
+
+### Project Replication Instructions
+<mark>Add discussion</mark>
 
 ### Project Content Descriptions and Analysis Process
 
