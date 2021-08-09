@@ -27,7 +27,7 @@ Tableau Public
 
 ## Project Discussion
 
-<mark>Add discussion</mark>
+Citibike provides a large amount of user data for analysis.  As of June 2021, 21 Gb of data are available from July 2013 to June 2021 in both New York City and Jersey City on the other side of the river.  The analysis presented covers December 2017 thru September 2018 due to the limitations in file size on the Tableau Public platform.
 
 ### Citibike Station Locations
 In order to provide the user with the best service, Citibike is interested in maintaining an adequate supply of bikes at the most popular stations.  The Station Popularity dashboard identifies the most popular stations to start and end a ride based on the number of rides associated with that location. Each map on the dashboard can be filtered to show between 1 and all months of data.  Note, that the December data is from 2017 to ensure a continuous dataset.  Zip code data is also provided as a reference to orient the user on the map.  There are minor shifts in popular stations from month to month.
@@ -77,7 +77,11 @@ The following analysis was performed, but not included in the final assessment:
 
 ### Analysis challenges
 
-<mark>Add discussion</mark>
+The largest challenge tackled in this analysis was determining what data to analyze.  There are 166 files with three distinct column formats. Python and Pandas were used to identify which files contained which type of column formatting.  After the data was chosen, Python and Pandas were used to calculate analysis fields of interest and merge all of the files into a single csv.  Analysis was taken in stages of smaller to larger data sets to speed up processing time as the final data set takes more time to load and save, but provides additional time series analysis that could not have been performed on a smaller data set.
+
+Along the way, it was discovered that data wrangling was best done in Python prior to loading into Tableau. All of the calculations were done in Tableau initially, but had to be redone each time a new larger data set was introduced to the analysis. To streamline the update process, calculations were moved to Python whenever possible. 
+
+The only calculation that was done inside of Tableau was ride distance.  However, it was abandoned in the large data set due to its computational needs exceeding the platforms ability on the large data set.  Based on smaller data sets, the information gathered by the distance calculation were not interesting enough to warrant further investigation into keeping the calculation.
 
 -----
 
