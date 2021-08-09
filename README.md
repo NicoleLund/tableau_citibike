@@ -4,14 +4,38 @@
 
 Note: This repository is under development.
 
-## Description
+## Project Overview
+### Description
 Analyze Citibike usage trends over time and identify anomalies within the data.
 
-## Packages Used
+<mark>Add background on where the data came from
+</mark>
+
+### Packages Used
 Python (pandas, requests, zipfile, io, splinter, beautiful soup, webdriver_manager, os)
 
 Tableau Public
 
+### Final Analysis Files
+<mark>Add links to final files</mark>
+
+## Project Discussion
+## Citibike Station Locations
+<mark>Add discussion and screen capture
+</mark>
+## Citibike Ridership Demographics
+<mark>Add discussion and screen capture
+</mark>
+## Citibike Ridership Anomaly
+<mark>Add discussion and screen capture
+</mark>
+## Citibike Average Rental Duration Anomaly
+<mark>Add discussion and screen capture
+</mark>
+## Analysis challenges
+<mark>Add discussion</mark>
+
+## Project Details
 ### Project Content Descriptions and Analysis Process
 * **a_Instructions**: Instructions for completing the assignment.
 * **b_Data_Download**: Download the dataset
