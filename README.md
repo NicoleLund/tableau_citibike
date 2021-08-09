@@ -1,5 +1,4 @@
 # tableau_citibike
-Note: This repository is under development.
 
 -----
 
@@ -88,7 +87,41 @@ The only calculation that was done inside of Tableau was ride distance.  However
 ## Project Details
 
 ### Project Replication Instructions
-<mark>Add discussion</mark>
+The analysis presented here can be replicated by completing the following steps:
+1. Create a folder to perform analysis within and copy all python files referenced below into it for use.
+2. Download source data files
+    * Run b_Data_Download/retrieve_data.ipynb
+3. Review file formats
+    * Run b_Data_Download/assess_data.ipynb
+4. Combine files to be analyzed in a single folder or remove files that are not of interest
+5. Verify chosen files have the correct format
+    * Run f_Project_Replication\assess_chosen_data.ipynb
+    * Results should show this format
+    ```plaintext
+        Data columns (total 16 columns):
+         #   Column                   Non-Null Count  Dtype  
+        ---  ------                   --------------  -----  
+         0   tripduration             131 non-null    int64  
+         1   starttime                131 non-null    object 
+         2   stoptime                 131 non-null    object 
+         3   start station id         131 non-null    int64  
+         4   start station name       131 non-null    object 
+         5   start station latitude   131 non-null    float64
+         6   start station longitude  131 non-null    float64
+         7   end station id           131 non-null    int64  
+         8   end station name         131 non-null    object 
+         9   end station latitude     131 non-null    float64
+         10  end station longitude    131 non-null    float64
+         11  bikeid                   131 non-null    int64  
+         12  usertype                 131 non-null    object 
+         13  birth year               128 non-null    object 
+         14  gender                   131 non-null    int64
+        ```
+6. Combine files into a single csv file
+    * Run f_Project_Replication\combine_files.ipynb
+7. Load the Tableau workbook
+8. Replace the data from the workbook with the combined csv file
+9. Review workbook for data pointer corrections.
 
 ### Project Content Descriptions and Analysis Process
 
@@ -188,6 +221,7 @@ The only calculation that was done inside of Tableau was ride distance.  However
         * maximum_file_size: Monthly data files folder
             * assess_chosen_data.ipynb: Confirm chosen data files have consistent formatting.
             * combine_files.ipynb: Uses Python and Pandas to append two csvs with consistent data contents.  Prepares data columns for Tableau to avoid Tableau calculations as much as possible. This file expands upon the same file contained in Investigate_small_files, but includes a minor correction needed for analyzing December 2017 datetime format.
+* f_Project_Replication: Example of project replication
 * **images**: Screen captures of analysis results.
 * **.gitignore**: Gitignore includes standard gitignore Python files and
     * All CSV files as they are too large to upload to Github
