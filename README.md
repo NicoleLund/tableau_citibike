@@ -119,9 +119,24 @@ The analysis presented here can be replicated by completing the following steps:
         ```
 6. Combine files into a single csv file
     * Run f_Project_Replication\combine_files.ipynb
-7. Load the Tableau workbook
-8. Replace the data from the workbook with the combined csv file
-9. Review workbook for data pointer corrections.
+7. Load the Tableau workbook from f_Project_Replication/citibike_analysis_for_replication.twbx
+8. Click on the "Index - Miscellaneous 1" dashboard
+9. Right click on the "Ride Durations by Age" data sheet and uncheck "hide"
+10. View that data sheet
+11. Select "Data" -> "New Data Source"
+12. Choose the new combined csv file. For easiest transition, ensure that the new file has a different name than the data in the workbook.
+13. View the "Ride Durations by Age" data sheet again
+14. Select "Data" -> "Replace Data Source"
+15. Choose new data
+16. In the table fields area rename "Age (bin)" to "Age (bin) old"
+17. In the table fields area right click on "Age" and "Convert to Dimension"
+18. In the table fields area right click on "Age" -> "Create" -> "Bins"
+19. In the popup window set the name to "Age (bin)"" and select 5 for Size of Bins
+20. In the figure column field, double click on "Age (bin) old" then rename to "Age (bin)"
+21. In the table fields area right click on "Age (1)" -> "Delete"
+22. In the table fields area right click on "Age (bin) Old" -> "Delete"
+23. Right click on the "Ride Durations by Age" data sheet and select "Hide" to hide the sheet again.
+24. Correct marker colors on Station Popularity if desired
 
 ### Project Content Descriptions and Analysis Process
 
